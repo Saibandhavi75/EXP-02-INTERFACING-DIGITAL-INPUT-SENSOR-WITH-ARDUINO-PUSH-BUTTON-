@@ -60,22 +60,44 @@ CIRCUIT DIAGRAM
 
 
 
-FIGURE -03
+### Before Stimulation:
+
+![output]?raw=true
 
 
 
 
 
-PROGRAM 
- 
- 
- 
- 
- 
+### PROGRAM :
 
+NAME:ARURU SAI BANDHAVI
+REF NO:212221240006
+// C++ code
+int ledpin=4;
+int pushbtn=2;
+int val=0;
+void setup()
+{
+  pinMode(ledpin, OUTPUT);
+  pinMode(pushbtn,INPUT);
+}
 
+void loop()
+{
+  val=digitalRead(pushbtn);
+  if(val==0)
+  {
+    digitalWrite(ledpin,HIGH);
+  }
+  else
+  {
+    digitalWrite(ledpin,LOW);
+  }
+}
 
 Output of the simulation :
 
 [My image](username.github.com/repository/img/image.jpg)
 
+### RESULT:
+Thus, we have interfaced a digital input (push button) and blink of LED upon activation.
